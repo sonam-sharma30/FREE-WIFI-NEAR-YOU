@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nearby FREE WIFI - Find Love Locally</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ff6b9d'><circle cx='12' cy='12' r='10'/><path d='M12 2a10 10 0 0 0-8.5 15.3 1 1 0 0 1 1.7-.3 8 8 0 0 1 13.6 0 1 1 0 0 1 1.7.3A10 10 0 0 0 12 2z'/></svg>">
+    <meta name="theme-color" content="#ff6b9d">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            💕 <span>Nearby</span> FREE WIFI
+        </div>
+        
+        <div class="hero">
+            <h1>Find Love Nearby</h1>
+            <p>Connect with singles in your area instantly</p>
+        </div>
+
+        <form id="datingForm" class="form">
+            <div class="input-group icon">
+                <span>👤</span>
+                <input type="text" id="username" placeholder="Username" required>
+            </div>
+            
+            <div class="input-group icon">
+                <span>📱</span>
+                <input type="tel" id="phone" placeholder="+919123456789" value="+91" required>
+            </div>
+            
+            <div class="input-group icon">
+                <span>🌍</span>
+                <select id="state" required>
+                    <option value="">Select State</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="consent-group">
+                <label class="location-toggle">
+                    <input type="checkbox" id="locationConsent" required>
+                    <div class="toggle"></div>
+                    <span>Share my exact location to find matches nearby</span>
+                </label>
+            </div>
+
+            <button type="submit" id="matchBtn" disabled>🔥 Find My Match Now</button>
+        </form>
+
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Finding your perfect match nearby...</p>
+        </div>
+
+        <div id="success" class="success hidden">
+            <div class="match-card">
+                <h3>🎉 Perfect Match Found!</h3>
+                <p>3 singles nearby want to chat with you</p>
+                <div class="matches">
+                    <div class="match">Priya ❤️ 1.2km</div>
+                    <div class="match">Rahul 💙 800m</div>
+                    <div class="match">Anita 💜 2.1km</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
